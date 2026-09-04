@@ -34,54 +34,6 @@
 
 ---
 
-## 疑難排解 (Troubleshooting)
-
-### `ModuleNotFoundError: No module named 'numpy'`
-
-若執行 `02_START.bat` 出現 `Local Studio FastAPI 應用程式無法載入` 且提示缺少 `numpy`，代表 `.venv` 虛擬環境內尚未安裝相依套件。請先啟用虛擬環境並補齊套件：
-
-```powershell
-cd TeachableMachine_Local_Studio_v3
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### `01_INSTALL.bat` 安裝失敗（pip install exit code 1）
-
-若安裝過程中出現：
-
-```
-[ERROR] Installation failed: InstallFailure: Command failed with exit code 1:
-...python.exe -m pip install --upgrade --timeout 240 --retries 5 pip setuptools wheel
-```
-
-代表在建立虛擬環境時無法連線至 PyPI，常見原因為公司網路 Proxy 阻擋或 SSL 憑證驗證失敗。可先手動測試：
-
-```powershell
-.venv\Scripts\python.exe -m pip install --upgrade pip
-```
-
-並依錯誤訊息判斷是否需要設定 Proxy（`HTTP_PROXY` / `HTTPS_PROXY`）或加入 `--trusted-host pypi.org --trusted-host files.pythonhosted.org`。詳細診斷請參考：
-
-```
-logs\LATEST_INSTALL.log
-```
-
----
-
-## 目錄結構建議
-
-```
-TeachableMachine_Local_Studio_v3/
-├── README.md
-├── images/
-│   ├── 01_icp_tool_select_m5531.png
-│   ├── 02_icp_batch_programming_setting.png
-│   └── 03_local_studio_bat_files.png
-├── 01_INSTALL.bat
-├── 02_START.bat
-└── ...
-```
 
 ## 修訂紀錄 (Revision History)
 
