@@ -34,6 +34,8 @@
 - `02_START.bat`：啟動後可以進行模型訓練 (Train Model)。
 
 ![TeachableMachine_Local_Studio_v3 目錄下的 bat 檔案](images/03_local_studio_bat_files.png)
+![TeachableMachine_GUI](images/05_TeachableMachine.png.png)
+
 
 ---
 
