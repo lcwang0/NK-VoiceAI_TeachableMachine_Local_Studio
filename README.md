@@ -9,7 +9,10 @@
 ## Step 2. 建立 Download Firmware 環境
 
 1. 安裝 [NuMicro ICP programming tool](https://www.nuvoton.com/resource-download.jsp?tp_GUID=SW1720200221181328&currentFolder=/products/microcontrollers/arm-cortex-m23-mcus/m2l31-series/&t=1788155572)。
-
+   連接NuLink2me與NK-VoiceAI
+   ![連接NuLink2me與NK-VoiceAI](images/04_ICP_connect.png)
+   
+   
 2. 開啟 ICP programmer，選擇 **M5531** 系列：
 
    ![開啟 ICP programmer 選擇 M5531 系列](images/01_icp_tool_select_m5531.png)
