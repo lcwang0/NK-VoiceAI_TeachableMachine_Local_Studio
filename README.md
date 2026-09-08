@@ -11,20 +11,22 @@
 1. 安裝 [NuMicro ICP programming tool](https://www.nuvoton.com/resource-download.jsp?tp_GUID=SW1720200221181328&currentFolder=/products/microcontrollers/arm-cortex-m23-mcus/m2l31-series/&t=1788155572)。
 
    連接NuLink2me與NK-VoiceAI
+   
    ![連接NuLink2me與NK-VoiceAI](images/01_ICP_connect.png)
+   
    ![實際連接NuLink2me與NK-VoiceAI](images/02_ICP_connect_real.png)
    
    
-2. 開啟 ICP programmer，選擇 **M55M1** 系列：
+3. 開啟 ICP programmer，選擇 **M55M1** 系列：
    ![開啟 ICP programmer 選擇 M55M1 系列](images/03_icp_tool_select_m55m1.png)
 
-3. 燒錄檔案設定：
+4. 燒錄檔案設定：
    - **APROM** 內載入 `/1_Collect Firmware_bin/DMIC_UAC_Codec_Monitor.bin`  （1_Collect_Firmware_bin）
    - **LDROM** 內載入 `/1_Collect Firmware_bin/ISP_MSC 2.bin`  （1_Collect_Firmware_bin）
    - **Setting** 配置 `boot from LDROM`
    ![Batch programming mode 設定畫面](images/04_icp_batch_programming_setting.png)
 
-4. 配置完成後，點選 **Start → batch programming mode (No)** 正確完成燒錄，確認進度100%並出現燒錄完成提示
+5. 配置完成後，點選 **Start → batch programming mode (No)** 正確完成燒錄，確認進度100%並出現燒錄完成提示
    ![Batch programming mode 完成畫面](images/05_icp_complete.png)
 
    關閉ICP連接，移除NuLink, USB直接連接 NK-VoiceAI。
