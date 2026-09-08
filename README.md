@@ -9,22 +9,24 @@
 ## Step 2. 建立 Download Firmware 環境
 
 1. 安裝 [NuMicro ICP programming tool](https://www.nuvoton.com/resource-download.jsp?tp_GUID=SW1720200221181328&currentFolder=/products/microcontrollers/arm-cortex-m23-mcus/m2l31-series/&t=1788155572)。
-   連接NuLink2me與NK-VoiceAI
-   ![連接NuLink2me與NK-VoiceAI](images/04_ICP_connect.png)
-   
-   
-2. 開啟 ICP programmer，選擇 **M5531** 系列：
 
-   ![開啟 ICP programmer 選擇 M5531 系列](images/01_icp_tool_select_m5531.png)
+   連接NuLink2me與NK-VoiceAI
+   ![連接NuLink2me與NK-VoiceAI](images/01_ICP_connect.png)
+   ![實際連接NuLink2me與NK-VoiceAI](images/02_ICP_connect_real.png)
+   
+   
+2. 開啟 ICP programmer，選擇 **M55M1** 系列：
+   ![開啟 ICP programmer 選擇 M55M1 系列](images/03_icp_tool_select_m55m1.png)
 
 3. 燒錄檔案設定：
    - **APROM** 內載入 `/1_Collect Firmware_bin/DMIC_UAC_Codec_Monitor.bin`
    - **LDROM** 內載入 `/1_Collect Firmware_bin/ISP_MSC 2.bin`
    - **Setting** 配置 `boot from LDROM`
-
-4. 配置完成後，點選 **Start → batch programming mode (No)**：
-
    ![Batch programming mode 設定畫面](images/02_icp_batch_programming_setting.png)
+
+4. 配置完成後，點選 **Start → batch programming mode (No)** 正確完成燒錄，確認進度100%並出現燒錄完成提示
+   ![Batch programming mode 完成畫面](images/05_icp_complete.png)
+
 
 ## Step 3. 建立 Local Teachable Machine 環境
 
@@ -33,8 +35,8 @@
 - `01_INSTALL.bat`：會自動安裝好環境（Python 虛擬環境 `.venv`、相依套件等）。
 - `02_START.bat`：啟動後可以進行模型訓練 (Train Model)。
 
-![TeachableMachine_Local_Studio_v3 目錄下的 bat 檔案](images/03_local_studio_bat_files.png)
-![TeachableMachine_GUI](images/05_TeachableMachine.png.png)
+![TeachableMachine_Local_Studio_v3 目錄下的 bat 檔案](images/06_local_studio_bat_files.png)
+![TeachableMachine_GUI](images/07_TeachableMachine.png)
 
 
 ---
@@ -44,4 +46,4 @@
 
 | 日期 | 版本 | 說明 |
 |------|------|------|
-| 2026.09.04 | 1.0 | 由 Word 文件轉換為 GitHub README.md 格式，圖片改以相對路徑嵌入。 |
+| 2026.09.04 | 1.0 | Initial Release. |
