@@ -22,7 +22,7 @@
    - **APROM** 內載入 `/1_Collect Firmware_bin/DMIC_UAC_Codec_Monitor.bin`  （1_Collect_Firmware_bin）
    - **LDROM** 內載入 `/1_Collect Firmware_bin/ISP_MSC 2.bin`  （1_Collect_Firmware_bin）
    - **Setting** 配置 `boot from LDROM`
-   ![Batch programming mode 設定畫面](images/04_icp_batch_programming_setting)
+   ![Batch programming mode 設定畫面](images/04_icp_batch_programming_setting.png)
 
 4. 配置完成後，點選 **Start → batch programming mode (No)** 正確完成燒錄，確認進度100%並出現燒錄完成提示
    ![Batch programming mode 完成畫面](images/05_icp_complete.png)
